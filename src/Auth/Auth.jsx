@@ -29,8 +29,9 @@ function Auth({ onLoginSuccess }) {
                 const token = response.data.token;
                 localStorage.setItem('token', token);
                 onLoginSuccess();
-            } else {
-                alert('Регистрация успешна! Теперь войдите в аккаунт.');
+            } 
+            else {
+                alert('Регистрация прошла успешно, можете войти в аккаунт.');
                 setIsLogin(true);
                 setPassword('');
             }
@@ -38,7 +39,8 @@ function Auth({ onLoginSuccess }) {
         catch (err) {
             if (err.response && err.response.data && err.response.data.message) {
                 setError(err.response.data.message);
-            } else {
+            } 
+            else {
                 setError('Не удалось связаться с сервером');
             }
         }
