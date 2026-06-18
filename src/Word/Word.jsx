@@ -112,15 +112,8 @@ function Word({ level = 'A1', onGoHome }) {
 
         }
     }
-    else {
-
-    }
-
     if (!currentWord) {
         return null;
-    }
-    else {
-
     }
 
     return (

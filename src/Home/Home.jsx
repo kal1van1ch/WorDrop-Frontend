@@ -47,9 +47,6 @@ function Home({ level, onLevelChange, onStart, onLogout }) {
                 alert('Не удалось сбросить статистику');
             }
         }
-        else {
-
-        }
     };
 
     useEffect(() => {

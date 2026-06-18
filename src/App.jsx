@@ -12,9 +12,6 @@ function App() {
         if (token) {
             setCurrentScreen('home');
         }
-        else {
-
-        }
     }, []);
 
     const handleLogout = () => {
@@ -23,11 +20,8 @@ function App() {
     };
 
     const handleStart = (level) => {
-        if (typeof level === 'string') {
+        if (typeof(level) === 'string') {
             setSelectedLevel(level);
-        }
-        else {
-            setSelectedLevel('A1');
         }
         setCurrentScreen('word');
     };
